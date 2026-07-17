@@ -1,7 +1,7 @@
 # Trading Algorithm on the S&P 500
 
-A project testing whether systematic trading signals — first simple technical rules, then a
-machine-learning pipeline — can generate returns on the S&P 500, built around rigorous
+A project testing whether systematic trading signals, first using simple technical rules, then a
+machine-learning pipeline, can generate returns on the S&P 500, built around rigorous
 backtesting methodology: walk-forward validation, avoidance of look-ahead bias, and
 cost-adjusted profit evaluation rather than stopping at classification accuracy.
 
@@ -31,14 +31,12 @@ cost-adjusted profit evaluation rather than stopping at classification accuracy.
 
 ## Key takeaways
 
-- Transaction costs have a large effect on realised returns — a small per-trade cost assumption
+- Transaction costs have a large effect on realised returns. A small per-trade cost assumption
   is enough to meaningfully change the picture versus a costless backtest.
 - Classification accuracy alone doesn't guarantee profitability, which is why the notebook
   checks realised P&L directly rather than stopping at accuracy scores.
 - Walk-forward validation was a deliberate design choice throughout, to avoid the model
   implicitly learning from future data.
-- Daily-bar technical signals on a major, highly liquid index are a genuinely hard test case —
-  a useful benchmark for the methodology even where a consistent edge doesn't show up.
 
 ## Possible next steps
 
